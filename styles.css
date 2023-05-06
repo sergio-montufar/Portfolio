@@ -1,0 +1,75 @@
+
+body {
+  background-color: rgb(171, 171, 171);
+}
+
+.title {
+  animation: 2s anim-textUp ease-out;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@keyframes anim-textUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #282A35;
+}
+
+.nav-bar ul li {
+  display: inline;
+  float: left;
+  color: white;
+  margin: 0 3rem;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-bar ul li a{
+    margin: 0 0 0 0;
+    padding: 0px 0px;
+  }
+}
+
+
+#github, #linked-in {
+  float: right;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.subject, .lists{ 
+  margin-left: 3.5rem;
+}
+
+.lists p {
+  margin-left: 1rem;
+}
